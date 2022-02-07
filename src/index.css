@@ -1,0 +1,52 @@
+:root {
+  --black-text: rgb(32, 35, 41);
+  --black-main: rgb(36, 40, 47);
+  --black-footer: rgb(32, 35, 41);
+  --gray-card: rgb(60, 62, 68);
+  --gray-h2: rgb(158, 158, 158);
+  --white: rgb(245, 245, 245);
+  --alive: rgb(85, 204, 68);
+  --dead: rgb(214, 61, 46);
+  --unknown: rgb(255, 211, 105);
+  --orange: rgb(255, 152, 0);
+}
+
+::selection {
+  color: var(--orange);
+  background: rgb(32, 35, 41);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+a h2:hover {
+  color: var(--orange);
+}
+a span:hover {
+  color: var(--orange);
+}
+
+.container {
+  width: 70rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1250px) {
+  .container {
+    width: 110rem;
+  }
+}
